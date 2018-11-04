@@ -1,0 +1,31 @@
+JDBC的URL＝协议名＋子协议名＋数据源名。
+a 协议名总是“jdbc”。
+b 子协议名由JDBC驱动程序的编写者决定。
+c 数据源名也可能包含用户与口令等信息；这些信息也可单独提供。
+几种常见的数据库连接
+
+
+-------------------------------oracle------------------
+驱动：oracle.jdbc.driver.OracleDriver
+URL：jdbc:oracle:thin:@machine_name:port:dbname
+注：machine_name：数据库所在的机器的名称；
+      port：端口号，默认是1521
+
+-------------------------------mysql-------------------
+驱动：com.mysql.jdbc.Driver
+URL：jdbc:mysql://machine_name:port/dbname
+注：machine_name：数据库所在的机器的名称；
+      port：端口号，默认3306    
+
+---------------------------SQL Server------------------
+驱动：com.microsoft.jdbc.sqlserver.SQLServerDriver
+URL：jdbc:microsoft:sqlserver://<machine_name><:port>;DatabaseName=<dbname>
+注：machine_name：数据库所在的机器的名称；
+      port：端口号，默认是1433
+
+--------------------------DB2--------------------------
+驱动：com.ibm.db2.jdbc.app.DB2Driver
+URL：jdbc:db2://<machine_name><:port>/dbname
+注：machine_name：数据库所在的机器的名称；
+      port：端口号，默认是5000
+-------------------------------------------------------

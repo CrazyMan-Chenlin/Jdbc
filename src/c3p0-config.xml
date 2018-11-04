@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<c3p0-config>
+    <default-config>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/contact?useSSL=true
+        </property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        <property name="checkoutTimeout">30000</property>>
+        <property name="initialPoolSize">10</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">10</property>
+    </default-config>
+    <!--name的值即为set方法去掉set并把首字母变为小写-->
+    <!--默认情况下default-config为mysql-->
+    <named-config name="oracle">
+
+    </named-config>
+</c3p0-config>
